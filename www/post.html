@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test POST</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/post.html">Upload a file</a></li>
+                <li><a href="/cgi.html">CGI Scripts</a></li>
+                <li><a href="/nonexistent.html">Error 404</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Upload a file</h1>
+        <form action="/uploads" method="POST" enctype="multipart/form-data">
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <input type="submit" value="Submit" style="margin-top: 10px;">
+        </form>
+        <div style="text-align: center; margin-top: 40;">
+            <a href="/uploads.html" class="uploaded-files-link">View uploaded files</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024, by drenassi and nsalles.</p>
+    </footer>
+</body>
+</html>
